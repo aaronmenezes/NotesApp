@@ -1,0 +1,15 @@
+
+ 
+@import '~@angular/material/theming';
+ 
+@include mat-core();
+ 
+$DayNotes-primary: mat-palette($mat-blue-grey,700);
+$DayNotes-accent: mat-palette($mat-orange, A200, A100, A400);
+ 
+$DayNotes-warn: mat-palette($mat-red);
+ 
+$DayNotes-theme: mat-light-theme($DayNotes-primary, $DayNotes-accent, $DayNotes-warn);
+
+@include angular-material-theme($DayNotes-theme);
+
