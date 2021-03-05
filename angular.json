@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "DayNotes": {
+    "NotesApp": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/DayNotes",
+            "outputPath": "docs/",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -63,18 +63,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "DayNotes:build"
+            "browserTarget": "NotesApp:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "DayNotes:build:production"
+              "browserTarget": "NotesApp:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "DayNotes:build"
+            "browserTarget": "NotesApp:build"
           }
         },
         "test": {
@@ -111,16 +111,16 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "DayNotes:serve"
+            "devServerTarget": "NotesApp:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "DayNotes:serve:production"
+              "devServerTarget": "NotesApp:serve:production"
             }
           }
         }
       }
     }
   },
-  "defaultProject": "DayNotes"
+  "defaultProject": "NotesApp"
 }
